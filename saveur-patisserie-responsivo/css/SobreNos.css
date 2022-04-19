@@ -1,0 +1,33 @@
+.conteinerGeral{
+    
+}
+
+img{
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+}
+
+.imagemPrincipal{
+    display: grid;
+    text-align: center;
+    grid-template-rows: 10%;
+    min-width: 100vh;
+    font-size: 200%;
+    color: white;
+}
+
+.rodape{
+    display: grid;
+    justify-content: center;
+}
+
+.DonoPadaria{
+
+}
+
+.paragrafo{
+
+}
+
+
