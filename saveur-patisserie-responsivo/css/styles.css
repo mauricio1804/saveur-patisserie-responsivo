@@ -1,3 +1,55 @@
-img{
+.img{
     object-fit: cover;
+}
+
+.viewport{
+    display: grid;
+    background-color: aqua;
+    min-height: 100vh;
+    grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.header{
+    
+    background-color:rgb(0, 255, 128);
+    grid-column: 1/4;
+
+    }
+
+.imgPrincipal{
+    grid-column: 1/4;
+    background-color: rgb(43, 66, 129);
+    
+}
+
+.salgados{
+    
+    background-color: black;
+
+}
+
+.textoDoces{
+    
+    background-color: blueviolet;
+}
+
+.bebidas{
+    
+    background-color: purple;
+}
+
+.textoSalgados{
+    grid-column: 2/3;
+    background-color: rgb(219, 95, 188);
+}
+
+.doces{
+    background-color: rgb(210, 233, 79);
+}
+
+.textoBebidas{
+    grid-column: 2/3;
+    background-color: rgb(141, 233, 88);
 }
