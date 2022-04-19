@@ -1,5 +1,5 @@
 /*Luis*/
-.img{
+img{
     object-fit: cover;
 }
 
@@ -21,7 +21,7 @@
 
 .imgPrincipal{
     grid-column: 1/4;
-    background-color: rgb(43, 66, 129);
+    
     
 }
 
