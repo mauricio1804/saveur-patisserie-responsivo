@@ -6,7 +6,7 @@ img{
 .viewport{
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 8%;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
@@ -75,3 +75,18 @@ img{
     text-align: right;
     
 }
+
+.hr{
+    background-color: black;
+}
+
+.rodape{
+    background-image: url(../imagens/Logo.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y:center ;
+    grid-column: 1/4;
+    grid-row: 7/10;
+}
+
