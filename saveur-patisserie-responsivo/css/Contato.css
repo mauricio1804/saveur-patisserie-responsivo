@@ -1,1 +1,59 @@
 /* Manu */
+
+/* agora que comecei essa pag */
+
+.Conteiner{
+    display: grid;
+    background-color: aqua;
+    min-height: 100vh;
+    grid-template-rows: repeat(8 1fr);
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+    grid-auto-flow: row;
+}
+
+img{
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+}
+
+.header{
+    grid-column: 1/4;
+    background-color: blue;
+}
+
+.titulo{
+    grid-column: 1/4;
+    background-color: crimson;
+}
+
+.localizacao{
+    grid-column: 3/4;
+    grid-row: 3/7;
+    background-color: blueviolet;
+}
+
+.textoContato{
+    grid-column: 1/3;
+background-color: yellowgreen;
+}
+
+.whats{
+    grid-column: 1/2;
+    background-color: darkmagenta;
+}
+
+.insta{
+    grid-column: 1/2;
+    background-color: lightpink;
+}
+
+.local{
+    grid-column: 1/2;
+    background-color: teal;
+}
+.rodape{
+    grid-column: 1/4;
+    background-color: black;
+}
