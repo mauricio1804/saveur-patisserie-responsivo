@@ -5,9 +5,8 @@ img{
 
 .viewport{
     display: grid;
-    background-color: aqua;
     min-height: 100vh;
-    grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
@@ -20,7 +19,15 @@ img{
     }
 
 .imgPrincipal{
+    display: flex;
     grid-column: 1/4;
+    background-image: url(../imagens/principalPagInicial.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:center ;
+    text-align: center;
+    justify-content: center;
+
     
     
 }
@@ -38,7 +45,7 @@ img{
 }
 
 .bebidas{
-    background-image: url(../imagens/cafePagInicial.png);
+    background-image: url(../imagens/cafezin.png.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position-x: center;
@@ -63,5 +70,6 @@ img{
 
 .textoBebidas{
     grid-column: 2/3;
+    text-align: right;
     
 }
