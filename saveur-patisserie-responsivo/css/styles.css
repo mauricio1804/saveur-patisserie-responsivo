@@ -5,9 +5,8 @@ img{
 
 .viewport{
     display: grid;
-    background-color: aqua;
     min-height: 100vh;
-    grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 8%;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
@@ -21,8 +20,17 @@ img{
 
 .imgPrincipal{
     grid-column: 1/4;
-    
-    
+    background-image: url(../imagens/principalPagInicial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y:center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+
 }
 
 .salgados{ 
@@ -33,12 +41,14 @@ img{
     background-position-y:center ;
 }
 
-.textoDoces{
-    
+.textoPrincipal{
+ display: flex;
+ justify-content: center;  
+ background-color: black; 
 }
 
 .bebidas{
-    background-image: url(../imagens/cafePagInicial.png);
+    background-image: url(../imagens/cafezin.png.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position-x: center;
@@ -63,5 +73,23 @@ img{
 
 .textoBebidas{
     grid-column: 2/3;
+    text-align: right;
     
 }
+
+.linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape{
+    background-image: url(../imagens/Logo.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y:center ;
+    grid-column: 1/4;
+    grid-row: 7/10;
+}
+
