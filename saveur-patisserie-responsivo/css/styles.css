@@ -22,6 +22,7 @@ img{
     grid-column: 1/4;
     background-image: url(../imagens/principalPagInicial.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position-x: center;
     background-position-y:center ;
     display: flex;
@@ -76,8 +77,10 @@ img{
     
 }
 
-.hr{
-    background-color: black;
+.linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rodape{
