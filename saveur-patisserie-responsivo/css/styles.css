@@ -6,7 +6,7 @@ img{
 .viewport{
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 8%;
+    grid-template-rows: 1fr 2fr; /*apenas duas rows no codigo, quando inspeciona diz q tem mais*/
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
@@ -30,6 +30,7 @@ img{
     align-items: center;
     color: white;
     font-size: 30px;
+    /*imagem nao ta 100% responsiva*/
 
 }
 
@@ -78,9 +79,8 @@ img{
 }
 
 .linha{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-column: 1/4;
+    
 }
 
 .rodape{
@@ -90,6 +90,20 @@ img{
     background-position-x: center;
     background-position-y:center ;
     grid-column: 1/4;
-    grid-row: 7/10;
+    
 }
 
+
+@media (max-width: 858px){
+.salgados{
+    /*nao consigo fzr a quebra da imagem e do texto*/
+    
+}
+
+.textoSalgados{ 
+    grid-column: 2/3;
+    text-align: center;
+     
+}
+
+}
