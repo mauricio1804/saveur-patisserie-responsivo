@@ -25,32 +25,43 @@ img{
     
 }
 
-.salgados{
-    
-    background-color: black;
-
+.salgados{ 
+    background-image: url(../imagens/coxinhaPagInicial.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y:center ;
 }
 
 .textoDoces{
     
-    background-color: blueviolet;
 }
 
 .bebidas{
+    background-image: url(../imagens/cafePagInicial.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y:center ;
     
-    background-color: purple;
 }
 
 .textoSalgados{
     grid-column: 2/3;
-    background-color: rgb(219, 95, 188);
+    text-align: right;
+    
+    
 }
 
 .doces{
-    background-color: rgb(210, 233, 79);
+    background-image: url(../imagens/docePagInicial.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y:center ;
 }
 
 .textoBebidas{
     grid-column: 2/3;
-    background-color: rgb(141, 233, 88);
+    
 }
