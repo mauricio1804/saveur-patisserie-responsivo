@@ -1,3 +1,4 @@
+/* Maurício */
 img{
     object-fit:cover ;
 }
@@ -5,40 +6,95 @@ img{
 .viewport{
     display: grid;
     background-color: aqua;
-    min-height: 100vh;
-    grid-template-rows: repeat(10 1fr);
-    grid-template-columns: 33% 33% 33%;
+    min-height: 200vh;
+    grid-template-rows: repeat(35 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     grid-auto-flow: row;
 }
 
 .header{
+    display: flex;
+    flex-direction: row;
     background-color:rgb(0, 255, 128);
     grid-column: 1/4;
+    display: grid;
+    gap: 10px;
 
-    }
+}
+
+.home{
+    background-color: rgb(34, 70, 70);
+}
+
+.sobreNos{
+    background-color: blueviolet;
+}
+
+.contato{
+    background-color: brown;
+}
+
+.cardapio{
+    background-color: coral;
+}
+
+.telefone{
+    background-color: darkorange;
+}
+
+.endereco{
+    background-color: darkolivegreen;
+}
 
 .titulo{
     background-color:rgb(0, 34, 17);
     grid-column: 1/4;
+    grid-row: 4;
+}
+
+.textoTitulo{
+    text-align: center;
 }
 
 .salgados{
     background-color: rgb(43, 66, 129);
-    grid-column: 1/1;
-    grid-row: 3/8;
-    background-image: url("imagens/coxinhaCardapio01.png");
+    grid-row: 7/24;
+    background-image: url(../imagens/coxinhaCardapio01.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y:center ;
 }
 
 .doces{
     background-color: black;
+    grid-row: 7/24;
+    background-image: url(../imagens/doceCardapio03.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y:center ;
+
 }
 
 .bebidas{
     background-color: blueviolet;
+    grid-row: 7/24;
+    background-image: url(../imagens/cafeCardapio.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y:center ;
 }
 
 .rodape{
+    background-image: url(../imagens/Logo.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y:center ;
     background-color: brown;
     grid-column: 1/4;
+    grid-row: 26/28;
 }
