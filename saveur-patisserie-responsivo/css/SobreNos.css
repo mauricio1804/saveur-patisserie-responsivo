@@ -3,7 +3,7 @@
     display: grid;
     background-color: aqua;
     min-height: 100vh;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30% 60% 1fr 20%;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
@@ -20,7 +20,7 @@
     text-align: center;
     grid-template-rows: 10%;
     min-width: 100vh;
-    font-size: 200%;
+    font-size: 170%;
     color: white;
 }
 
@@ -42,7 +42,7 @@
     background-position-x: center;
     background-position-y:center ;
     grid-column: 1/4;
-    grid-row: 26/28;
+    grid-row: 4/4;
 }
 
 
