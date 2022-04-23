@@ -1,3 +1,4 @@
+/* Maurício */
 img{
     object-fit: cover;
 }
@@ -74,10 +75,10 @@ button{
 
 .viewport{
     display: grid;
-    background-color: aqua;
-    min-height: 150vh;
+    /* background-color: aqua; */
+    min-height: 200vh;
     grid-template-columns: repeat(3 66.66%);
-    grid-template-rows: 6% 25% 15% 33.33% 40% 8%;
+    grid-template-rows: 8% 25% 10% 35% 15% 8%;
 }
 
 .imgPrincipal{
@@ -96,102 +97,169 @@ button{
 
 }
 
-.textoPrincipal{
-    display: flex;
-    justify-content: center;  
-    background-color: black; 
-}
-
 .conteudo{
     display: grid;
-    background-color: rgb(199, 113, 113);
+    /* background-color: rgb(199, 113, 113); */
     grid-column: 1/4;
     grid-row: 4;
-    grid-template-columns: repeat(3 66.66%);
+    grid-template-columns:24.66% 23.66% 30.66%;
+    justify-content: space-between;
 }
 
 .tiposSalada{
-    background-color: brown;
+    /* background-color: rgb(197, 59, 59); */
     grid-column: 1;
-    display: grid;
-    grid-template-rows: repeat(5 1fr);
 }
 
-.salada{
-    background-color: aliceblue;
-    grid-column: 1/3;
+.saladaTitulo{
+    /* background-color: aliceblue; */
+    display: flex;
+    grid-column: 1/6;
     grid-row: 1;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .s1{
     display: flex;
     flex-wrap: wrap;
     grid-row: 2;
-    font-size: 20%;
+    font-size: 50%;
+    justify-content: start;
+    /* background-color: chocolate; */
+    align-items: center;
 }
 
 .s2{
+    display: flex;
     grid-row: 3;
-    font-size: 20%;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
 }
 
 .s3{
+    display: flex;
     grid-row: 4;
-    font-size: 20%;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
 }
 
 .s4{
+    display: flex;
     grid-row: 5;
-    font-size: 20%;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
 }
 
-.b1{
+.bolinha{
     display: flex;
     flex-wrap: wrap;
     grid-row: 2;
-    margin: 10px;
-    height: 10px;
-    width: 10px;
+    margin: 20px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
-    background-color: rgb(21, 105, 179);
-    align-items: flex-end;
-}
-
-.b2{
-    grid-row: 3;
-    margin: 10px;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgb(21, 105, 179);
-}
-
-.b3{
-    grid-row: 4;
-    margin: 10px;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgb(21, 105, 179);
-}
-
-.b4{
-    grid-row: 5;
-    margin: 10px;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgb(21, 105, 179);
+    background-color: #C4C4C4;
 }
 
 .tiposQuiches{
-    background-color: rgb(87, 141, 141);
+    /* background-color: rgb(87, 141, 141); */
     grid-column: 2;
+    justify-content: end;
+}
+
+.quicheTitulo{
+    /* background-color: aliceblue; */
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 1;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.q1{
+    display: flex;
+    flex-wrap: wrap;
+    grid-row: 2;
+    font-size: 50%;
+    justify-content: start;
+    /* background-color: chocolate; */
+    align-items: center;
+}
+
+.q2{
+    display: flex;
+    grid-row: 3;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.q3{
+    display: flex;
+    grid-row: 4;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.q4{
+    display: flex;
+    grid-row: 5;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
 }
 
 .tiposSanduiches{
-    background-color: rgb(1, 2, 2);
+    /* background-color: rgb(53, 134, 134); */
     grid-column: 3;
+}
+
+.sanduichesTitulo{
+    /* background-color: aliceblue; */
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 1;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.san1{
+    display: flex;
+    flex-wrap: wrap;
+    grid-row: 2;
+    font-size: 50%;
+    justify-content: start;
+    /* background-color: chocolate; */
+    align-items: center;
+}
+
+.san2{
+    display: flex;
+    grid-row: 3;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.san3{
+    display: flex;
+    grid-row: 4;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.san4{
+    display: flex;
+    grid-row: 5;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
 }
 
 .rodape{
@@ -200,46 +268,12 @@ button{
     background-size:contain;
     background-position-x: center;
     background-position-y:center ;
-    background-color: brown;
+    /* background-color: brown; */
     grid-column: 1/4;
     grid-row: 6;
 }
 
-.b1{
-    display: flex;
-    flex-wrap: wrap;
-    grid-row: 2;
-    margin: 10px;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgb(21, 105, 179);
-    align-items: flex-end;
-}
+@media (max-width: 1020px) {
 
-.b2{
-    grid-row: 3;
-    margin: 10px;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgb(21, 105, 179);
-}
-
-.b3{
-    grid-row: 4;
-    margin: 10px;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgb(21, 105, 179);
-}
-
-.b4{
-    grid-row: 5;
-    margin: 10px;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgb(21, 105, 179);
+    
 }
