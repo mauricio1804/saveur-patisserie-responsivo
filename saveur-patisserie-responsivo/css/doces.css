@@ -84,7 +84,7 @@ button{
 .imgPrincipal{
     grid-column: 1/4;
     grid-row: 2;
-    background-image: url(../imagens/PrincipalSalgados01.png);
+    background-image: url(../imagens/principalDoces.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -106,12 +106,12 @@ button{
     justify-content: space-between;
 }
 
-.tiposSalada{
+.tiposBolo{
     /* background-color: rgb(197, 59, 59); */
     grid-column: 1;
 }
 
-.saladaTitulo{
+.bolosTitulo{
     /* background-color: aliceblue; */
     display: flex;
     grid-column: 1/6;
@@ -120,7 +120,7 @@ button{
     justify-content: center;
 }
 
-.s1{
+.b1{
     display: flex;
     flex-wrap: wrap;
     grid-row: 2;
@@ -130,7 +130,7 @@ button{
     align-items: center;
 }
 
-.s2{
+.b2{
     display: flex;
     grid-row: 3;
     font-size: 50%;
@@ -138,7 +138,7 @@ button{
     align-items: center;
 }
 
-.s3{
+.b3{
     display: flex;
     grid-row: 4;
     font-size: 50%;
@@ -146,7 +146,7 @@ button{
     align-items: center;
 }
 
-.s4{
+.b4{
     display: flex;
     grid-row: 5;
     font-size: 50%;
@@ -165,13 +165,13 @@ button{
     background-color: #C4C4C4;
 }
 
-.tiposQuiches{
+.tiposTortas{
     /* background-color: rgb(87, 141, 141); */
     grid-column: 2;
     justify-content: end;
 }
 
-.quicheTitulo{
+.tortaTitulo{
     /* background-color: aliceblue; */
     display: flex;
     grid-column: 1/3;
@@ -180,7 +180,7 @@ button{
     justify-content: center;
 }
 
-.q1{
+.t1{
     display: flex;
     flex-wrap: wrap;
     grid-row: 2;
@@ -190,7 +190,7 @@ button{
     align-items: center;
 }
 
-.q2{
+.t2{
     display: flex;
     grid-row: 3;
     font-size: 50%;
@@ -198,7 +198,7 @@ button{
     align-items: center;
 }
 
-.q3{
+.t3{
     display: flex;
     grid-row: 4;
     font-size: 50%;
@@ -206,7 +206,7 @@ button{
     align-items: center;
 }
 
-.q4{
+.t4{
     display: flex;
     grid-row: 5;
     font-size: 50%;
@@ -214,12 +214,12 @@ button{
     align-items: center;
 }
 
-.tiposSanduiches{
+.tiposRocamboles{
     /* background-color: rgb(53, 134, 134); */
     grid-column: 3;
 }
 
-.sanduichesTitulo{
+.rocamboleTitulo{
     /* background-color: aliceblue; */
     display: flex;
     grid-column: 1/3;
@@ -228,7 +228,7 @@ button{
     justify-content: center;
 }
 
-.san1{
+.r1{
     display: flex;
     flex-wrap: wrap;
     grid-row: 2;
@@ -238,7 +238,7 @@ button{
     align-items: center;
 }
 
-.san2{
+.r2{
     display: flex;
     grid-row: 3;
     font-size: 50%;
@@ -246,7 +246,7 @@ button{
     align-items: center;
 }
 
-.san3{
+.r3{
     display: flex;
     grid-row: 4;
     font-size: 50%;
@@ -254,7 +254,7 @@ button{
     align-items: center;
 }
 
-.san4{
+.r4{
     display: flex;
     grid-row: 5;
     font-size: 50%;
@@ -291,63 +291,20 @@ button{
         background-color: #C4C4C4;
     }
 
-    .tiposSalada{
+    .tiposBolo{
         /* background-color: rgb(197, 59, 59); */
         grid-column: 1;
         grid-row: 1;
     }
 
-    .sanduichesTitulo{
-        /* background-color: aliceblue; */
-        display: flex;
-        grid-column: 1/3;
-        grid-row: 1;
-        align-items: flex-end;
-        justify-content: center;
-    }
-    
-    .san1{
-        display: flex;
-        flex-wrap: wrap;
-        grid-row: 2;
-        font-size: 50%;
-        justify-content: start;
-        /* background-color: chocolate; */
-        align-items: center;
-    }
-    
-    .san2{
-        display: flex;
-        grid-row: 3;
-        font-size: 50%;
-        justify-content: start;
-        align-items: center;
-    }
-    
-    .san3{
-        display: flex;
-        grid-row: 4;
-        font-size: 50%;
-        justify-content: start;
-        align-items: center;
-    }
-    
-    .san4{
-        display: flex;
-        grid-row: 5;
-        font-size: 50%;
-        justify-content: start;
-        align-items: center;
-    }
-
-    .tiposQuiches{
+    .tiposTortas{
         /* background-color: rgb(87, 141, 141); */
         grid-column: 1;
         justify-content: end;
         grid-row: 2;
     }
 
-    .tiposSanduiches{
+    .tiposRocamboles{
         /* background-color: rgb(53, 134, 134); */
         grid-column: 1;
         grid-row: 3;
