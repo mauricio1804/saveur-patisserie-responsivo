@@ -15,7 +15,7 @@ button{
     background-color: rgb(255, 255, 255);
     min-height: 10vh;
     width: 100%;
-    grid-template-columns: 6% 10% 10% 10% 14% 25% 25%;
+    grid-template-columns: 6% 10% 10% 10% 13% 26% 25%;
     grid-template-rows: 1fr;
     position: fixed;
     justify-content: space-between;
@@ -63,6 +63,10 @@ button{
     grid-column: 6;
     font-size: 50%;
     border: none;
+    background-image: url(../imagens/iconeWhats.png);
+    background-repeat: no-repeat;
+    background-size:7%;
+    background-position-y: center;
     
 }
 
@@ -71,6 +75,10 @@ button{
     grid-column: 7;
     font-size: 50%;
     border: none;
+    background-image: url(../imagens/iconeLocal.png);
+    background-repeat: no-repeat;
+    background-size:7%;
+    background-position-y: center;
 }
 
  .viewport{

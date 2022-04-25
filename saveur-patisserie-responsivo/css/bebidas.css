@@ -16,7 +16,7 @@ button{
     background-color: rgb(255, 255, 255);
     min-height: 10vh;
     width: 100%;
-    grid-template-columns: 6% 10% 10% 10% 14% 25% 25%;
+    grid-template-columns: 6% 10% 10% 10% 13% 26% 25%;
     grid-template-rows: 1fr;
     justify-content: space-between;
    
@@ -63,6 +63,10 @@ button{
     grid-column: 6;
     font-size: 50%;
     border: none;
+    background-image: url(../imagens/iconeWhats.png);
+    background-repeat: no-repeat;
+    background-size:7%;
+    background-position-y: center;
     
 }
 
@@ -71,6 +75,10 @@ button{
     grid-column: 7;
     font-size: 50%;
     border: none;
+    background-image: url(../imagens/iconeLocal.png);
+    background-repeat: no-repeat;
+    background-size:7%;
+    background-position-y: center;
 }
 
 .viewport{
@@ -84,7 +92,7 @@ button{
 .imgPrincipal{
     grid-column: 1/4;
     grid-row: 2;
-    background-image: url(../imagens/PrincipalSalgados01.png);
+    background-image: url(../imagens/principalBebidas.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -106,18 +114,65 @@ button{
     justify-content: space-between;
 }
 
-.tiposSalada{
+.tiposCafe{
     /* background-color: rgb(197, 59, 59); */
     grid-column: 1;
 }
 
-.saladaTitulo{
+.cafeTitulo{
     /* background-color: aliceblue; */
     display: flex;
     grid-column: 1/6;
+    grid-row: 1; 
+}
+
+.c1{
+    display: flex;
+    flex-wrap: wrap;
+    grid-row: 2;
+    font-size: 50%;
+    justify-content: start;
+    /* background-color: chocolate; */
+    align-items: center;
+}
+
+.c2{
+    display: flex;
+    grid-row: 3;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.c3{
+    display: flex;
+    grid-row: 4;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.c4{
+    display: flex;
+    grid-row: 5;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.tiposSuco{
+    /* background-color: rgb(87, 141, 141); */
+    grid-column: 2;
+    justify-content: end;
+}
+
+.sucoTitulo{
+    /* background-color: aliceblue; */
+    display: flex;
+    grid-column: 1/3;
     grid-row: 1;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
 }
 
 .s1{
@@ -154,6 +209,52 @@ button{
     align-items: center;
 }
 
+.tiposMilkShake{
+    /* background-color: rgb(53, 134, 134); */
+    grid-column: 3;
+}
+
+.MilkShakeTitulo{
+    /* background-color: aliceblue; */
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.ms1{
+    display: flex;
+    flex-wrap: wrap;
+    grid-row: 2;
+    font-size: 50%;
+    justify-content: start;
+    /* background-color: chocolate; */
+    align-items: center;
+}
+
+.ms2{
+    display: flex;
+    grid-row: 3;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.ms3{
+    display: flex;
+    grid-row: 4;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.ms4{
+    display: flex;
+    grid-row: 5;
+    font-size: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
 .bolinha{
     display: flex;
     flex-wrap: wrap;
@@ -165,101 +266,14 @@ button{
     background-color: #C4C4C4;
 }
 
-.tiposQuiches{
-    /* background-color: rgb(87, 141, 141); */
-    grid-column: 2;
-    justify-content: end;
-}
-
-.quicheTitulo{
-    /* background-color: aliceblue; */
-    display: flex;
-    grid-column: 1/3;
-    grid-row: 1;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.q1{
+.bolinha2{
     display: flex;
     flex-wrap: wrap;
     grid-row: 2;
-    font-size: 50%;
-    justify-content: start;
-    /* background-color: chocolate; */
-    align-items: center;
-}
-
-.q2{
-    display: flex;
-    grid-row: 3;
-    font-size: 50%;
-    justify-content: start;
-    align-items: center;
-}
-
-.q3{
-    display: flex;
-    grid-row: 4;
-    font-size: 50%;
-    justify-content: start;
-    align-items: center;
-}
-
-.q4{
-    display: flex;
-    grid-row: 5;
-    font-size: 50%;
-    justify-content: start;
-    align-items: center;
-}
-
-.tiposSanduiches{
-    /* background-color: rgb(53, 134, 134); */
-    grid-column: 3;
-}
-
-.sanduichesTitulo{
-    /* background-color: aliceblue; */
-    display: flex;
-    grid-column: 1/3;
-    grid-row: 1;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.san1{
-    display: flex;
-    flex-wrap: wrap;
-    grid-row: 2;
-    font-size: 50%;
-    justify-content: start;
-    /* background-color: chocolate; */
-    align-items: center;
-}
-
-.san2{
-    display: flex;
-    grid-row: 3;
-    font-size: 50%;
-    justify-content: start;
-    align-items: center;
-}
-
-.san3{
-    display: flex;
-    grid-row: 4;
-    font-size: 50%;
-    justify-content: start;
-    align-items: center;
-}
-
-.san4{
-    display: flex;
-    grid-row: 5;
-    font-size: 50%;
-    justify-content: start;
-    align-items: center;
+    margin: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
 }
 
 .rodape{
@@ -291,63 +305,21 @@ button{
         background-color: #C4C4C4;
     }
 
-    .tiposSalada{
+    .tiposCafe{
         /* background-color: rgb(197, 59, 59); */
         grid-column: 1;
         grid-row: 1;
     }
 
-    .sanduichesTitulo{
-        /* background-color: aliceblue; */
-        display: flex;
-        grid-column: 1/3;
-        grid-row: 1;
-        align-items: flex-end;
-        justify-content: center;
-    }
-    
-    .san1{
-        display: flex;
-        flex-wrap: wrap;
-        grid-row: 2;
-        font-size: 50%;
-        justify-content: start;
-        /* background-color: chocolate; */
-        align-items: center;
-    }
-    
-    .san2{
-        display: flex;
-        grid-row: 3;
-        font-size: 50%;
-        justify-content: start;
-        align-items: center;
-    }
-    
-    .san3{
-        display: flex;
-        grid-row: 4;
-        font-size: 50%;
-        justify-content: start;
-        align-items: center;
-    }
-    
-    .san4{
-        display: flex;
-        grid-row: 5;
-        font-size: 50%;
-        justify-content: start;
-        align-items: center;
-    }
-
-    .tiposQuiches{
+   
+    .tiposSuco{
         /* background-color: rgb(87, 141, 141); */
         grid-column: 1;
         justify-content: end;
         grid-row: 2;
     }
 
-    .tiposSanduiches{
+    .tiposMilkShake{
         /* background-color: rgb(53, 134, 134); */
         grid-column: 1;
         grid-row: 3;
