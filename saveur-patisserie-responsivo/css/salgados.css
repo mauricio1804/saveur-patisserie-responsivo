@@ -101,7 +101,7 @@ button{
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 30px;
+    font-size: 4vw;
 
 }
 
@@ -374,4 +374,10 @@ button{
     }
 
     
+}
+
+@media (max-width: 375px){
+    .imgPrincipal{
+        font-size: 20px;
+    }
 }

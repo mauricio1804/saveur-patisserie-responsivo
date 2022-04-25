@@ -45,12 +45,7 @@ img{
     
 }
 
-.textoPrincipal{
- display: flex;
- justify-content: center; 
- 
-  
-}
+
 
 .bebidas{
     background-image: url(../imagens/cafezin.png.png);
