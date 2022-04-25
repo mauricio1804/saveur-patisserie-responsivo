@@ -108,7 +108,7 @@ button{
 .textoTitulo{
     /* background-color: rgb(255, 146, 146); */
     text-align: center;
-    grid-column: 2;
+    grid-column: 2/2;
     grid-row: 1;
     font-size: clamp(1em, 4vw, 10vw);
 }
@@ -117,20 +117,15 @@ button{
     display: grid;
     /* background-color: rgb(43, 66, 129); */
     grid-row: 5;
-    background-image: url(../imagens/coxinhaCardapio.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position-x: center;
-    background-position-y:center ;
     cursor: pointer;
     border: 0px;
     grid-template-columns: 1 1fr;
     grid-template-rows: 16 1fr;
-    filter: brightness(0.5);
+    filter: brightness(1);
     z-index: 1;
 
 }
-.salgados:hover{
+.salgados img:hover{
     filter: brightness(0.9);
     z-index: 1;
 
@@ -140,15 +135,14 @@ button{
     z-index: 10;
     color: white;
     justify-content: center;
-    grid-row: 16;
-    font-size: clamp(1em, 4vw, 10vw);
+    font-size: clamp(1em, 4vw, 10vw);                                                       
 }
 
 .doces{
     display: grid;
     /* background-color: black; */
     grid-row: 5;
-    grid-column: 2/2;
+    grid-column: 2;
     background-image: url(../imagens/doceCardapio.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -188,7 +182,7 @@ button{
     .titulo{
         /* background-color:rgb(36, 25, 25); */
         grid-column: 1/4;
-        grid-row: 3;
+        grid-row: 3/3;
         display: grid;
         grid-template-columns: 33.33% 33.33% 33.33%;
     } 
@@ -196,8 +190,8 @@ button{
     .textoTitulo{
         /* background-color: rgb(255, 146, 146); */
         text-align: center;
-        grid-column: 2;
-        grid-row: 1;
+        grid-column: 2/2;
+        grid-row: 1/1;
         font-size: clamp(1em, 4vw, 10vw);
     }
 
@@ -214,7 +208,7 @@ button{
     .salgados{
         display: grid;
         /* background-color: rgb(43, 66, 129); */
-        grid-row: 5;
+        grid-row: 5/5;
         background-image: url(../imagens/coxinhaCardapio.png);
         background-repeat: no-repeat;
         background-size:cover;
