@@ -1,8 +1,9 @@
 /* Manu */
 .Conteiner{
+    /* background-color: aquamarine; */
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 3% 2fr 3% 1fr;
     grid-template-columns: 1fr 1fr 1fr ;
     gap: 10px;
     grid-auto-flow: row;
@@ -10,13 +11,13 @@
 
 /* ainda estamos arrumando o header */
 .header{
-    display: flex;
+    /* display: flex; */
     background-color:rgb(0, 255, 128);
     grid-column: 1/4;
 }
 
 .ImagenPrincipal{
-    grid-column: 1/4;
+     grid-column: 1/4;
     grid-row: 2;
     background-image: url(../imagens/principalSobreNoz.jpg);
     background-repeat: no-repeat;
@@ -27,35 +28,39 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 30px;
-
+    font-size: 30px; 
+    /* background-color:brown */
 }
 
  .DonoPadaria{
-    grid-column: 1/2;
-    grid-row: 4/6;
+    grid-column: 2/1;
+    grid-row: 4;
     background-image: url(../imagens/donoPadariaSobreNos.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position-x: center;
-    background-position-y:center ;
+    background-position-y:center ; 
+    /* background-color: black; */
 } 
 
  .Paragrafo{
     grid-column: 2/4;
+    grid-row: 4;
     font-size: 60%;
     text-align: justify;
-    margin-right: 3%;
+    margin-right: 3%; 
+    /* background-color: darkgreen; */
 } 
 
 .rodape{
-    background-color: black;
+    /* background-color: black; */
     background-image: url(../imagens/Logo.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position-x: center;
     background-position-y:center ;
     grid-column: 1/4;
+    grid-row: 6; 
 }
 
 img{
@@ -65,9 +70,64 @@ img{
 }
 
  .linha{
-    grid-column: 1/4;
+    grid-column: 1/4; 
+    grid-row: 3;
+    /* background-color:blue; */
 }
 
 .linha2{
-    grid-column: 1/4;
-}  
+    grid-column: 1/4; 
+    grid-row: 5;
+    /* background-color: hotpink; */
+} 
+
+@media (max-width: 800px){
+    .Conteiner{
+        grid-template-rows: 1fr 2fr 3% 20% 1fr 3% 7%;
+    }
+
+    .header{
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    .ImagenPrincipal{
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    .DonoPadaria{
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .Paragrafo{
+        grid-column: 1/4;
+        grid-row: 5;
+        margin-left: 5%;
+        margin-right: 3%;
+    }
+
+    .linha{
+        grid-column: 1/4; 
+        grid-row: 3;
+    }
+
+    /* não consigo arrumar a linha, deixar ela na horizontal */
+    .linha2{
+        grid-column: 1/4; 
+        grid-row: 6;
+    }
+
+    .rodape{
+        grid-column: 1/4; 
+        grid-row: 7;
+    }
+}
+
+    @media (max-width: 505px){
+
+        .ImagenPrincipal{
+        text-align: center;
+        }
+}
