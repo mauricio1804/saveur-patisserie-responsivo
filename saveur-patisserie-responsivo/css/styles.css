@@ -120,6 +120,7 @@ img{
 .salgados{
     grid-column: 2;
     grid-row: 4;
+    width: 300px;
     
 }
 
