@@ -9,102 +9,106 @@ button{
 
 .header{
     z-index: 70;
-    top: 0px;
     grid-column: 1/4;
-    grid-row: 1;
     display: grid;
     background-color: rgb(255, 255, 255);
-    min-height: 10vh;
     width: 100%;
-    grid-template-columns: 6% 10% 10% 10% 14% 25% 25%;
+    grid-template-columns: 6% 10% 10% 10% 13% 26% 25%;
     grid-template-rows: 1fr;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
    
 }
 
 .home{
+    display: flex;
     /* background-color: aqua; */
     grid-column: 1;
-    background-image: url(../imagens/Logo.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .sobreNos{
+    display: flex;
     /* background-color: aliceblue; */
     grid-column: 2;
     font-size: 50%;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .contato{
+    display: flex;
     /* background-color: blue; */
     grid-column: 3;
     font-size: 50%;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .cardapio{
+    display: flex;
     /* background-color: blueviolet; */
     grid-column: 4;
     font-size: 50%;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .telefone{
+    display: flex;
     /* background-color: brown; */
     grid-column: 6;
     font-size: 50%;
     border: none;
-    background-image: url(../imagens/iconeWhats.png);
-    background-repeat: no-repeat;
-    background-size:7%;
-    background-position-y: center;
+    align-items: center;
+    column-gap: 10px;
     
 }
 
 .endereco{
+    display: flex;
     /* background-color: chocolate; */
     grid-column: 7;
     font-size: 50%;
     border: none;
-    background-image: url(../imagens/iconeLocal.png);
-    background-repeat: no-repeat;
-    background-size:7%;
-    background-position-y: center;
+    column-gap: 10px;
+    align-items: center;
 }
 
 .viewport{
     display: grid;
     /* background-color: aqua; */
-    min-height: 200vh;
+    min-height: 150vh;
     grid-template-columns: repeat(3 66.66%);
-    grid-template-rows: 8% 25% 10% 35% 15% 8%;
+    grid-template-rows: 6% 25% 10% 35% 13% 8%;
 }
 
 .imgPrincipal{
+    display: grid;
     grid-column: 1/4;
     grid-row: 2;
     background-image: url(../imagens/PrincipalSalgados01.png);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position-x: center;
     background-position-y:center ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 4vw;
-
+    grid-template-columns: repeat(3, 1fr);
+    background-size:100%;
+    height: 100%;
 }
 
+.textoImagem{
+    grid-column: 2/2;
+    grid-row: 2;
+    text-align: center;
+    color: white;
+    font-size: 90%;
+}
 .conteudo{
     display: grid;
     /* background-color: rgb(199, 113, 113); */
@@ -286,21 +290,16 @@ button{
 }
 
 @media (max-width: 1020px) {
-    .conteudo{
-        display: grid;
-        /* background-color: rgb(199, 113, 113); */
-        grid-column: 2;
-        grid-row: 4;
-        grid-template-columns:100%;
+    .viewport{
+    min-height: 150vh;
+    grid-template-columns: repeat(3 66.66%);
+    grid-template-rows: 6% 10% 25% 1% 35% 45% 6%;
     }
 
-    .bolinha{
-        display: flex;
-        margin: 20px;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: #C4C4C4;
+    .conteudo{
+        grid-column: 2;
+        grid-row: 5;
+        grid-template-columns:100%;
     }
 
     .tiposSalada{
@@ -309,47 +308,8 @@ button{
         grid-row: 1;
     }
 
-    .sanduichesTitulo{
-        /* background-color: aliceblue; */
-        display: flex;
-        grid-column: 1/3;
-        grid-row: 1;
-        align-items: flex-end;
-        justify-content: center;
-    }
-    
-    .san1{
-        display: flex;
-        flex-wrap: wrap;
-        grid-row: 2;
-        font-size: 50%;
-        justify-content: start;
-        /* background-color: chocolate; */
-        align-items: center;
-    }
-    
-    .san2{
-        display: flex;
-        grid-row: 3;
-        font-size: 50%;
-        justify-content: start;
-        align-items: center;
-    }
-    
-    .san3{
-        display: flex;
-        grid-row: 4;
-        font-size: 50%;
-        justify-content: start;
-        align-items: center;
-    }
-    
-    .san4{
-        display: flex;
-        grid-row: 5;
-        font-size: 50%;
-        justify-content: start;
-        align-items: center;
+    .saladaTitulo{
+        font-size: 70%;
     }
 
     .tiposQuiches{
@@ -359,25 +319,72 @@ button{
         grid-row: 2;
     }
 
+    .quicheTitulo{
+        font-size: 70%;
+    }
+
     .tiposSanduiches{
         /* background-color: rgb(53, 134, 134); */
         grid-column: 1;
         grid-row: 3;
     }
 
-    .viewport{
-        display: grid;
-        /* background-color: aqua; */
-        min-height: 250vh;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 8% 25% 5% 50% 15% 8%;
+    .sanduichesTitulo{
+        font-size: 70%;
     }
 
-    
-}
-
-@media (max-width: 375px){
     .imgPrincipal{
-        font-size: 20px;
+        grid-row: 3;
+        grid-column: 1/4;
+    }
+
+    .rodape{
+        grid-row: 7;
+        grid-column: 1/4;
+    }
+
+    .header{
+        grid-template-rows: repeat(6 1fr);
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+        
+    }
+
+    .home{
+       grid-column: 1;
+       grid-row: 1/1;
+       z-index: 10;
+    }
+    
+    .sobreNos{
+        grid-column: 1;
+       grid-row: 3/3;
+       font-size: 40%;
+    }
+    
+    .contato{
+        grid-column: 1;
+       grid-row: 4/4;
+       font-size: 40%;
+    }
+    
+    .cardapio{
+        grid-column: 1;
+       grid-row: 5/5;
+       font-size: 40%;
+    }
+    
+    .telefone{
+        grid-column: 1;
+       grid-row: 6/6;
+       text-align: left;
+       font-size: 40%;
+    }
+    
+    .endereco{
+        grid-column: 1;
+        grid-row: 7/7;
+        background-size: 20px;
+        font-size: 40%;
     }
 }

@@ -9,7 +9,6 @@ button{
 
 .header{
     z-index: 70;
-    top: 0px;
     grid-column: 1/4;
     display: grid;
     background-color: rgb(255, 255, 255);
@@ -17,74 +16,69 @@ button{
     width: 100%;
     grid-template-columns: 6% 10% 10% 10% 13% 26% 25%;
     grid-template-rows: 1fr;
-    position: fixed;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
    
 }
 
 .home{
     display: flex;
-    background-color: aqua;
+    /* background-color: aqua; */
     grid-column: 1;
-    background-image: url(../imagens/Logo.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .sobreNos{
     display: flex;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     grid-column: 2;
     font-size: 50%;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .contato{
     display: flex;
-    background-color: blue;
+    /* background-color: blue; */
     grid-column: 3;
     font-size: 50%;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .cardapio{
     display: flex;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     grid-column: 4;
     font-size: 50%;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .telefone{
-    background-color: brown;
+    display: flex;
+    /* background-color: brown; */
     grid-column: 6;
     font-size: 50%;
     border: none;
-    background-image: url(../imagens/iconeWhats.png);
-    background-repeat: no-repeat;
-    background-size:7%;
-    background-position-y: center;
-    
+    align-items: center;
+    column-gap: 10px;
 }
 
 .endereco{
-    background-color: chocolate;
+    display: flex;
+    /* background-color: chocolate; */
     grid-column: 7;
     font-size: 50%;
     border: none;
-    flex-wrap: nowrap;
+    column-gap: 10px;
     align-items: center;
-    background-image: url(../imagens/iconeLocal.png);
-    background-repeat: no-repeat;
-    background-size:7%;
-    background-position-y: center;
 }
 
  .viewport{
@@ -110,7 +104,6 @@ button{
     text-align: center;
     grid-column: 2/2;
     grid-row: 1;
-    font-size: clamp(1em, 4vw, 10vw);
 }
 
 .salgados{
@@ -119,23 +112,21 @@ button{
     grid-row: 5;
     cursor: pointer;
     border: 0px;
+    background-image: url(../imagens/CoxinhaCardapio.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: center;
+    background-position-y:center ;
     grid-template-columns: 1 1fr;
     grid-template-rows: 16 1fr;
-    filter: brightness(1);
-    z-index: 1;
-
-}
-.salgados img:hover{
-    filter: brightness(0.9);
-    z-index: 1;
 
 }
 
 .tituloBotoes{
     z-index: 10;
     color: white;
-    justify-content: center;
-    font-size: clamp(1em, 4vw, 10vw);                                                       
+    justify-content: center; 
+    grid-row: 16;                                                     
 }
 
 .doces{
@@ -150,6 +141,8 @@ button{
     background-position-y:center ;
     cursor: pointer;
     border: 0px;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: 16 1fr;
 }
 
 .bebidas{
@@ -164,6 +157,8 @@ button{
     background-position-y:center ;
     cursor: pointer;
     border: 0px;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: 16 1fr;
 }
 
 .rodape{
@@ -177,176 +172,98 @@ button{
     grid-row: 7;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 973px) {
 
     .titulo{
-        /* background-color:rgb(36, 25, 25); */
         grid-column: 1/4;
-        grid-row: 3/3;
-        display: grid;
-        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-row: 4/4;
+        grid-template-columns: 25% 25% 25%;
     } 
     
     .textoTitulo{
-        /* background-color: rgb(255, 146, 146); */
-        text-align: center;
         grid-column: 2/2;
         grid-row: 1/1;
-        font-size: clamp(1em, 4vw, 10vw);
+        font-size: 200%;
     }
 
     .viewport{
-        display: grid;
-        /* background-color: aqua; */
-        top: 100px;
-        min-height: 200vh;
-        grid-template-rows:6% 4% 3% 10% 20% 5% 20% 5% 20% 10% 8%;
+        grid-template-rows:6% 4% 15% 10% 20% 5% 20% 5% 20% 10% 8%;
         grid-template-columns: 10% 55% 10%;
-        justify-content: space-between;
     } 
 
     .salgados{
-        display: grid;
-        /* background-color: rgb(43, 66, 129); */
-        grid-row: 5/5;
-        background-image: url(../imagens/coxinhaCardapio.png);
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position-x: center;
-        background-position-y:center ;
-        cursor: pointer;
-        border: 0px;
         grid-template-columns: 1 1fr;
         grid-template-rows: 16 1fr;
-        filter: brightness(0.5);
-        z-index: 1;
         grid-column: 2/2;
-    }
-
-    .salgados:hover{
-        filter: brightness(0.9);
-        z-index: 1;
-    
     }
 
     .doces{
-        display: grid;
-        /* background-color: black; */
         grid-row: 7;
         grid-column: 2/2;
-        background-image: url(../imagens/doceCardapio.png);
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position-x: center;
-        background-position-y:center ;
-        cursor: pointer;
-        border: 0px;
     }
 
     .bebidas{
-        display: grid;
-        /* background-color: blueviolet; */
         grid-row: 9;
         grid-column: 2/2;
-        background-image: url(../imagens/cafeCardapio.png);
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position-x: center;
-        background-position-y:center ;
-        cursor: pointer;
-        border: 0px;
     }
 
     .rodape{
-        background-image: url(../imagens/Logo.png);
-        background-repeat: no-repeat;
-        background-size:contain;
-        background-position-x: center;
-        background-position-y:center ;
-        /* background-color: brown; */
         grid-column: 1/4;
         grid-row: 11;
     }
-}
 
-@media (max-width: 1334px){
     .header{
-        z-index: 70;
-        grid-column: 1/4;
-        display: grid;
-        background-color: rgb(255, 255, 255);
-        min-height: 10vh;
-        width: 100%;
-        grid-template-columns: 25% 20% 20% 20% 50%;
-        grid-template-rows: 1fr 1fr;
-
+        grid-template-rows: repeat(6 1fr);
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+        
     }
 
-        .home{
-            background-color: aqua;
-            grid-column: 1;
-            grid-row: 1;
-            background-image: url(../imagens/Logo.png);
-            background-size: 20%;
-            background-repeat: no-repeat;
-            background-position-x: center;
-            background-position-y: center;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .sobreNos{
-            background-color: rgb(60, 101, 136);
-            grid-column: 2;
-            grid-row: 1;
-            font-size: 50%;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-        }
-        
-        .contato{
-            background-color: blue;
-            grid-column: 3;
-            grid-row: 1;
-            font-size: 50%;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-        }
-        
-        .cardapio{
-            background-color: blueviolet;
-            grid-column: 4;
-            grid-row: 1;
-            font-size: 50%;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-        }
-        
-        .telefone{
-            background-color: brown;
-            grid-column: 1;
-            font-size: 1fr;
-            border: none;
-            background-image: url(../imagens/iconeWhats.png);
-            background-repeat: no-repeat;
-            background-size:7%;
-            background-position-y: center;
-            
-        }
-        
-        .endereco{
-            background-color: chocolate;
-            grid-column: 2;
-            font-size: 1fr;
-            border: none;
-            flex-wrap: nowrap;
-            align-items: center;
-            background-image: url(../imagens/iconeLocal.png);
-            background-repeat: no-repeat;
-            background-size:7%;
-            background-position-y: center;
-        }
+    .home{
+       grid-column: 1;
+       grid-row: 1/1;
+       z-index: 10;
+    }
+    
+    .sobreNos{
+        grid-column: 1;
+       grid-row: 3/3;
+       font-size: 40%;
+    }
+    
+    .contato{
+        grid-column: 1;
+       grid-row: 4/4;
+       font-size: 40%;
+    }
+    
+    .cardapio{
+        grid-column: 1;
+       grid-row: 5/5;
+       font-size: 40%;
+    }
+    
+    .telefone{
+        grid-column: 1;
+       grid-row: 6/6;
+       text-align: left;
+       font-size: 40%;
+    }
+    
+    .endereco{
+        grid-column: 1;
+        grid-row: 7/7;
+        background-size: 20px;
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 278px){
+    .telefone{
+        font-size: 30%;
+    }
+
+    .endereco{
+        font-size: 30%;
+    }
 }
