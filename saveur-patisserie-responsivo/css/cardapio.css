@@ -184,10 +184,11 @@ button{
         grid-column: 2/2;
         grid-row: 1/1;
         font-size: 200%;
+
     }
 
     .viewport{
-        grid-template-rows:6% 4% 15% 10% 20% 5% 20% 5% 20% 10% 8%;
+        grid-template-rows:6% 1% 5% 10% 20% 5% 20% 5% 20% 10% 8%;
         grid-template-columns: 10% 55% 10%;
     } 
 
@@ -213,57 +214,54 @@ button{
     }
 
     .header{
-        grid-template-rows: repeat(6 1fr);
-        grid-template-columns: 1fr;
+        grid-template-rows: 40% 15% 15%;
+        grid-template-columns: 18% 28% 25% 1fr;
         flex-wrap: wrap;
         
     }
 
     .home{
-       grid-column: 1;
-       grid-row: 1/1;
-       z-index: 10;
-    }
-    
-    .sobreNos{
         grid-column: 1;
-       grid-row: 3/3;
-       font-size: 40%;
-    }
-    
-    .contato{
-        grid-column: 1;
-       grid-row: 4/4;
-       font-size: 40%;
-    }
-    
-    .cardapio{
-        grid-column: 1;
-       grid-row: 5/5;
-       font-size: 40%;
-    }
-    
-    .telefone{
-        grid-column: 1;
-       grid-row: 6/6;
-       text-align: left;
-       font-size: 40%;
-    }
-    
-    .endereco{
-        grid-column: 1;
-        grid-row: 7/7;
-        background-size: 20px;
+        grid-row: 1/1;
+        z-index: 10;
+        justify-content: flex-start;
+     }
+     
+     .sobreNos{
+         display: flex;
+        grid-column: 2;
+        grid-row: 1;
         font-size: 40%;
-    }
-}
-
-@media (max-width: 278px){
-    .telefone{
-        font-size: 30%;
-    }
-
-    .endereco{
-        font-size: 30%;
-    }
+        z-index: 100;
+        text-align: center;
+        /* background-color: aqua; */
+     }
+     
+     .contato{
+         grid-column: 3;
+        grid-row: 1;
+        font-size: 40%;
+        text-align: left;
+     }
+     
+     .cardapio{
+         grid-column: 4;
+        grid-row: 1;
+        font-size: 40%;
+        text-align: left;
+     }
+     
+     .telefone{
+         grid-column: 1/5;
+        grid-row: 2;
+        text-align: left;
+        font-size: 40%;
+     }
+     
+     .endereco{
+         grid-column: 1/5;
+         grid-row: 3;
+         background-size: 20px;
+         font-size: 40%;
+     } 
 }

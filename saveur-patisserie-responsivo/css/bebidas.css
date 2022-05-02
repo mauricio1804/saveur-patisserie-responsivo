@@ -9,100 +9,105 @@ button{
 
 .header{
     z-index: 70;
-    top: 0px;
     grid-column: 1/4;
-    grid-row: 1;
     display: grid;
     background-color: rgb(255, 255, 255);
-    min-height: 10vh;
     width: 100%;
     grid-template-columns: 6% 10% 10% 10% 13% 26% 25%;
     grid-template-rows: 1fr;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
    
 }
 
 .home{
+    display: flex;
     /* background-color: aqua; */
     grid-column: 1;
-    background-image: url(../imagens/Logo.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .sobreNos{
+    display: flex;
     /* background-color: aliceblue; */
     grid-column: 2;
     font-size: 50%;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .contato{
+    display: flex;
     /* background-color: blue; */
     grid-column: 3;
     font-size: 50%;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .cardapio{
+    display: flex;
     /* background-color: blueviolet; */
     grid-column: 4;
     font-size: 50%;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .telefone{
+    display: flex;
     /* background-color: brown; */
     grid-column: 6;
     font-size: 50%;
     border: none;
-    background-image: url(../imagens/iconeWhats.png);
-    background-repeat: no-repeat;
-    background-size:7%;
-    background-position-y: center;
+    align-items: center;
+    column-gap: 10px;
     
 }
 
 .endereco{
+    display: flex;
     /* background-color: chocolate; */
     grid-column: 7;
     font-size: 50%;
     border: none;
-    background-image: url(../imagens/iconeLocal.png);
-    background-repeat: no-repeat;
-    background-size:7%;
-    background-position-y: center;
+    column-gap: 10px;
+    align-items: center;
 }
 
 .viewport{
     display: grid;
     /* background-color: aqua; */
-    min-height: 200vh;
+    min-height: 150vh;
     grid-template-columns: repeat(3 66.66%);
-    grid-template-rows: 8% 25% 10% 35% 15% 8%;
+    grid-template-rows: 6% 25% 10% 35% 13% 8%;
 }
 
 .imgPrincipal{
+    display: grid;
     grid-column: 1/4;
     grid-row: 2;
     background-image: url(../imagens/principalBebidas.png);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position-x: center;
     background-position-y:center ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 4vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-size:100%;
+    height: 100%;
+}
 
+.textoImagem{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    color: white;
 }
 
 .conteudo{
@@ -288,27 +293,26 @@ button{
 }
 
 @media (max-width: 1020px) {
-    .conteudo{
-        display: grid;
-        /* background-color: rgb(199, 113, 113); */
+    .viewport{
+        min-height: 150vh;
+        grid-template-columns: repeat(3 66.66%);
+        grid-template-rows: 6% 2% 10% 1% 35% 45% 6%;
+    }
+        
+     .conteudo{
         grid-column: 2;
         grid-row: 4;
         grid-template-columns:100%;
-    }
-
-    .bolinha{
-        display: flex;
-        margin: 20px;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: #C4C4C4;
     }
 
     .tiposCafe{
         /* background-color: rgb(197, 59, 59); */
         grid-column: 1;
         grid-row: 1;
+    }
+
+    .cafeTitulo{
+        font-size: 70%; 
     }
 
    
@@ -319,19 +323,81 @@ button{
         grid-row: 2;
     }
 
+    .sucoTitulo{
+        font-size: 70%;
+    }
+
     .tiposMilkShake{
         /* background-color: rgb(53, 134, 134); */
         grid-column: 1;
         grid-row: 3;
     }
 
-    .viewport{
-        display: grid;
-        /* background-color: aqua; */
-        min-height: 250vh;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 8% 25% 5% 50% 15% 8%;
+    .MilkShakeTitulo{
+        font-size: 70%;
     }
+
+    .imgPrincipal{
+        grid-row: 3;
+        grid-column: 1/4;
+    }
+
+    .rodape{
+        grid-row: 7;
+        grid-column: 1/4;
+    }
+
+    .header{
+        grid-template-rows: 40% 15% 15%;
+        grid-template-columns: 18% 28% 25% 1fr;
+        flex-wrap: wrap;
+        
+    }
+
+    .home{
+        grid-column: 1;
+        grid-row: 1/1;
+        z-index: 10;
+        justify-content: flex-start;
+     }
+     
+     .sobreNos{
+         display: flex;
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 40%;
+        z-index: 100;
+        text-align: center;
+        /* background-color: aqua; */
+     }
+     
+     .contato{
+         grid-column: 3;
+        grid-row: 1;
+        font-size: 40%;
+        text-align: left;
+     }
+     
+     .cardapio{
+         grid-column: 4;
+        grid-row: 1;
+        font-size: 40%;
+        text-align: left;
+     }
+     
+     .telefone{
+         grid-column: 1/5;
+        grid-row: 2;
+        text-align: left;
+        font-size: 40%;
+     }
+     
+     .endereco{
+         grid-column: 1/5;
+         grid-row: 3;
+         background-size: 20px;
+         font-size: 40%;
+     } 
 
     
 }

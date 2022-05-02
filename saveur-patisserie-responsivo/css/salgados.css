@@ -98,17 +98,18 @@ button{
     background-position-x: center;
     background-position-y:center ;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background-size:100%;
     height: 100%;
 }
 
 .textoImagem{
-    grid-column: 2/2;
+    grid-column: 2;
     grid-row: 2;
     text-align: center;
     color: white;
-    font-size: 90%;
 }
+
 .conteudo{
     display: grid;
     /* background-color: rgb(199, 113, 113); */
@@ -291,14 +292,14 @@ button{
 
 @media (max-width: 1020px) {
     .viewport{
-    min-height: 150vh;
-    grid-template-columns: repeat(3 66.66%);
-    grid-template-rows: 6% 10% 25% 1% 35% 45% 6%;
+        min-height: 150vh;
+        grid-template-columns: repeat(3 66.66%);
+        grid-template-rows: 6% 2% 11% 1% 35% 45% 6%;
     }
-
+        
     .conteudo{
         grid-column: 2;
-        grid-row: 5;
+        grid-row: 4;
         grid-template-columns:100%;
     }
 
@@ -345,46 +346,53 @@ button{
 
     .header{
         grid-template-rows: repeat(6 1fr);
-        grid-template-columns: 1fr;
+        grid-template-columns: 18% 28% 25% 1fr;
         flex-wrap: wrap;
         
     }
 
     .home{
-       grid-column: 1;
-       grid-row: 1/1;
-       z-index: 10;
-    }
-    
-    .sobreNos{
         grid-column: 1;
-       grid-row: 3/3;
-       font-size: 40%;
-    }
-    
-    .contato{
-        grid-column: 1;
-       grid-row: 4/4;
-       font-size: 40%;
-    }
-    
-    .cardapio{
-        grid-column: 1;
-       grid-row: 5/5;
-       font-size: 40%;
-    }
-    
-    .telefone{
-        grid-column: 1;
-       grid-row: 6/6;
-       text-align: left;
-       font-size: 40%;
-    }
-    
-    .endereco{
-        grid-column: 1;
-        grid-row: 7/7;
-        background-size: 20px;
+        grid-row: 1/1;
+        z-index: 10;
+        justify-content: flex-start;
+     }
+     
+     .sobreNos{
+         display: flex;
+        grid-column: 2;
+        grid-row: 1;
         font-size: 40%;
-    }
+        z-index: 100;
+        text-align: center;
+        /* background-color: aqua; */
+     }
+     
+     .contato{
+         grid-column: 3;
+        grid-row: 1;
+        font-size: 40%;
+        text-align: left;
+     }
+     
+     .cardapio{
+         grid-column: 4;
+        grid-row: 1;
+        font-size: 40%;
+        text-align: left;
+     }
+     
+     .telefone{
+         grid-column: 1/5;
+        grid-row: 2;
+        text-align: left;
+        font-size: 40%;
+     }
+     
+     .endereco{
+         grid-column: 1/5;
+         grid-row: 3;
+         background-size: 20px;
+         font-size: 40%;
+     } 
 }

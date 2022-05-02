@@ -294,7 +294,7 @@ button{
 .viewport{
     min-height: 150vh;
     grid-template-columns: repeat(3 66.66%);
-    grid-template-rows: 6% 2% 15% 1% 35% 45% 6%;
+    grid-template-rows: 6% 2% 10% 1% 35% 45% 6%;
 }
     
  .conteudo{
@@ -337,6 +337,7 @@ button{
     .imgPrincipal{
         grid-row: 3;
         grid-column: 1/4;
+        background-size: 100%;
     }
 
     .rodape{
@@ -345,7 +346,7 @@ button{
     }
 
     .header{
-        grid-template-rows: repeat(6 1fr);
+        grid-template-rows: 40% 15% 15%;
         grid-template-columns: 18% 28% 25% 1fr;
         flex-wrap: wrap;
         
